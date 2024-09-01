@@ -1,4 +1,4 @@
-# RetroJapSound [alpha] [v0.1.0]
+# RetroJapSound [alpha] [v0.1.1]
 A Comprehensive Reference to Sound Chips in Japanese Computers and Consoles, Including FMP, PMD, and MDX Music File Formats.
 
 ## Sound Chip
@@ -48,7 +48,7 @@ FM3ch Extend[^3] ×3 / CSM /<br> SSG-EG[^4]<br>(LFO removed)</td><td align="cent
 ADPCM-A[^7] ×6</td><td align="center">Stereo</td><td align="center">SNK NEO•GEO</td>
 </tr>
 <tr>
-<td align="center">2CH mode ×3 / CSM /<br> SSG-EG</td><td align="center">4-bit/2-55.5kHz<br>
+<td align="center">2CH Mode ×3 / CSM /<br> SSG-EG</td><td align="center">4-bit/2-55.5kHz<br>
 
 ADPCM-B[^8] ×1</td><td align="center">YM3016</td><td align="center">TAITO Z System</td>
 </tr>
@@ -696,6 +696,7 @@ CM300 + CM-32L[^59] + Emulated CM-32P</td>
 ### Music Archive
  - xxx\.joshw.info Music Archive: https://vgm.hcs64.com/
  - VGMRips: https://vgmrips.net/packs/
+   - VGMRips All Of Them 2024 05 18: https://archive.org/details/vgmrips-all-of-them
  - Project 2612 - The Sega Genesis/Sega Mega Drive Music Archive: https://project2612.org/
    - Project 2612 Complete Archive (2021-07-12) [704 Sets]: https://archive.org/details/project-2612-complete-archive-2021-07-12-704-sets.-7z
  - Mirsoft\.info - World of Game Music: http://mirsoft.info/
@@ -707,8 +708,8 @@ CM300 + CM-32L[^59] + Emulated CM-32P</td>
 ###
  - 【雷門】 Kaminarimon HES Music Archive: http://kaminarimon.free.fr/hes/
  - SMT's MDX Collection v1.04 - Hyper Burst CE++: https://archive.org/details/smts-mdx-collection-v-1.04-hyper-burst-ce-2023-08-27-ultra.-7z
- - WARC: mdxoarchive\.webcrow.jp (2018-04-25): https://archive.org/details/mdxoarchive.webcrow.jp-20180425
- - X68000 MDX Master Library: https://archive.org/details/X68000MDXML
+ - Web ARChive: mdxoarchive\.webcrow.jp (2018-04-25): https://archive.org/details/mdxoarchive.webcrow.jp-20180425
+ - Eidis and Neko68K present X68000 MDX Master Library: https://archive.org/details/X68000MDXML
  - NFG Games - Directory Listing of /X68000/Music/: https://nfggames.com/X68000/index.php/Music/
  - NFG Games - Directory Listing of /PC98/Music/: https://nfggames.com/PC98/index.php/Music/
  - PC-98 Music Disks: FMP Music DIsk 1-9, some PMD disks, a lot of FMP/PMD files, and more: https://archive.org/details/c-77-fmp-fmp-music-disk-vol.-9-mdfmdsdcp
@@ -739,7 +740,7 @@ PCM: A sampling rate of 15.7 kHz was used for the PCM samples. To reduce data si
 FM Synthesis: By fully utilizing the 9-voice polyphony of the FM synthesis, a rich and expressive vocal quality was achieved.")<br>
 [PC-8801シリーズ　ゲームアーツの音声合成集](https://www.youtube.com/watch?v=bzyf4fjjjN0)
 [^2]: SSG uses its built-in DAC to output analog signals directly, while FM uses an external DAC. These two require hardware mixing to combine, with different systems and sound modules using various mixing ratios. As a result, the volume balance between SSG and FM parts may vary when played on different devices. The later YMF288 and YMF297 chips omitted SSG's built-in DAC, using an external DAC for both FM and SSG parts. This fixed the volume ratio at 100% for FM and 25% for SSG, which cannot be adjusted.
-[^3]: FM Channel 3 in the OPN soundchips has a special mode that allows frequencies to be set independently between the 4 operators, bringing the possibility of extended polyphony and other effects. This feature is officially known as Sound Effect Mode, but is also referred to as FM3ch Extend Mode (BambooTracker), Multi-Frequency Mode (ymfm), Ext. CH3 Mode (DefleMask), Extended Channel Mode (furnace), and 2CH Mode (YM2610).<br>
+[^3]: FM Channel 3 in the OPN soundchips has a special mode that allows frequencies to be set independently between the 4 operators, bringing the possibility of extended polyphony and other effects. This feature is officially known as Sound Effect Mode, but is also referred to as FM3ch Extend Mode ([BambooTracker](https://bambootracker.github.io/BambooTracker/)), Multi-Frequency Mode ([ymfm](https://github.com/mamedev/mame/blob/master/3rdparty/ymfm/GeneralInfo.md#family-history)), Ext. CH3 Mode ([DefleMask](https://deflemask.com/)), Extended Channel Mode ([furnace](https://github.com/tildearrow/furnace)), and 2CH Mode (YM2610).<br>
 [FM3Extend - pedipanol's guide to MML](https://mml-guide.readthedocs.io/pmd/fm3extend/)<br>
 [BambooTracker FM3ch拡張モードについて](https://maakmusic.hatenablog.com/entry/2020/03/01/160542)<br>
 [PC-98 - "Sonorously Box" by Takeaki Watanabe - Oscilloscope View](https://www.youtube.com/watch?v=BDOSkD0Twos "This composition utilizes algorithm ALG 4, pairing OP1 with OP2 and OP3 with OP4. Each pair combines to generate a single voice, effectively doubling the polyphony of channel 3, which is visually represented in the video as FM3 and FM3Ex1 grids.")
@@ -852,7 +853,7 @@ The composer is also the author of the MCDRV sound driver for x68k.<br>
 [^39]: Samples are compressed to 4-bit ADPCM, which decompresses to 12-bit PCM, but only the top 10 bits are output through the built-in DAC.
 [^40]: PCM8.X uses software mixing to expand the number of ADPCM channels to 8 and extends PDX format (EX-PDX) support to both 8-bit and 16-bit linear PCM (EX-PCM mode), with the ability to adjust sample volume. The subsequent PCM8A.X further added the pitch adjustment capabilities from MPCM.X.<br>
 [X68000 MDX FM音源 THE SQUARE［TRUTH］より「TRUTH」](https://www.youtube.com/watch?v=UyG8u4UudvA)<br>
-[X68030 PCM8.x と PCM8SB.x 比較](https://www.youtube.com/watch?v=dag6A-4TrEQ)
+[X68030 PCM8.x と PCM8SB.x 比較](https://www.youtube.com/watch?v=dag6A-4TrEQ "CUL's arrangement of 'The Cursed Ship Queen Mary - Aboard Ship' heavily utilizes all 8 PCM channels of the PCM8, as shown in the MMDSP's VELOCITY GRAPHICS after Tr 09. This intense processing load makes it a well-known track for its demanding audio requirements.")
 [^41]: Voices are created from up to 4 partials which can be combined in various ways (including ring modulation). With 32 partials available overall, polyphony depends on the tonal complexity of the music, and 8 to 32 notes can be played simultaneously.
 [^42]: [ゲームフリーク待望のシューティングゲームの最高傑作。 グラディウスⅡ ⎯ GOFERの野望 ⎯](http://gyusyabu.ddo.jp/MP3/1992/GRA2.html)
 [^43]: [KONAMI ORIGINAL GAME SOFTWARE 悪魔城ドラキュラ](http://gyusyabu.ddo.jp/MP3/1993/AKU55.html)
@@ -864,7 +865,7 @@ The composer is also the author of the MCDRV sound driver for x68k.<br>
 To correctly playback RCP format MIDI files with CM6 control data on Windows, as seen in this video, the specialized software player [Miyap2002](https://www.vector.co.jp/soft/win95/art/se236400.html) is necessary. While the widely used [TMIDI Player](https://blackmidi.fandom.com/wiki/Software:TMIDI_Player) cannot transmit CM6 sysex data, Miyap2002 can. Additionally, since 2018, newer versions of [MDPlayer](https://github.com/kuma4649/MDPlayer) have also acquired the ability to transmit CM6/GSD files.
 [^47]: This video was uploaded by the author of [MAmidiMEmo](https://github.com/110-kenichi/mame).<br>
 [DANGUN FEVERON - SOUL SUPERMARKET / N.Misawa - YM2414 + YM2608 \*REAL CHIP\* Ver. by Cadon](https://www.youtube.com/watch?v=mbsEIKtRiHA)<br>
-`.RCP` is the file format used by the MIDI sequencing software "Recomposer" Ver.2.0 to Ver.2.5. `.CM6` is a sysex file used alongside .RCP, controlling sound modules like the CM-64 or MT-32.<br>
+`.RCP` is the file format used by the MIDI sequencing software "Recomposer" Ver.2.0 to Ver.2.5. `.CM6` is a sysex file used alongside `.RCP`, controlling sound modules like the CM-64 or MT-32.<br>
 [A Recomposer file (.RCP, .R36, .G36, and .MCP) to Standard MIDI File (.mid) converter](https://shingo45endo.github.io/rcm2smf/)
 [^48]: [KONAMI ORIGINAL GAME SOFTWARE パロディウスだ！ ⎯ 神話からお笑いへ ⎯](http://gyusyabu.ddo.jp/MP3/1991/PARO1.html)
 [^49]: [超弩級3Dシューティングゲーム メタルサイト](http://gyusyabu.ddo.jp/MP3/1989/MS1.html)
@@ -873,7 +874,8 @@ To correctly playback RCP format MIDI files with CM6 control data on Windows, as
 [^51]: [疾駆する宇宙､X68000オリジナル｡シューティング･ドリーム発進! ソル・フィース](http://gyusyabu.ddo.jp/MP3/1990/SOLF1.html)<br>
 [Sol-Feace (YM2151 / MT-32 / CM-64) | Sharp X68000 Full Soundtrack OST](https://www.youtube.com/watch?v=ClWzfO0aR0o&t=4567s "(CM-64 ver.)")
 [^52]: [KONAMI ORIGINAL GAME SOFTWARE 出たな!!ツインビー](http://gyusyabu.ddo.jp/MP3/1991/DTTW55.html)<br>
-[【MIDI X68000】Detana!! TwinBee | 出たな!! ツインビー ~ BGM ~ MT-32 ver. // MiSTer FPGA // MT32-pi MT32](https://www.youtube.com/watch?v=c346cZnghyI&t=1142s "Loading (MT-32 ver.)")
+[【MIDI X68000】Detana!! TwinBee | 出たな!! ツインビー ~ BGM ~ MT-32 ver. // MiSTer FPGA // MT32-pi MT32](https://www.youtube.com/watch?v=c346cZnghyI&t=1142s "Loading (MT-32 ver.)")<br>
+[コナミ・モーニング・ミュージック](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%96%E3%83%AB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0#%E3%82%B3%E3%83%8A%E3%83%9F%E3%83%BB%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%BB%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF)
 [^53]: [Tim Follin - "Ghouls 'n' Ghosts (C64)" Soundtrack [Oscilloscope View]](https://www.youtube.com/watch?v=wz36JWHTk-A&t=498s)<br>
 [Tim Follin - “Ghouls 'n' Ghosts (Amiga) - Main Theme” [Oscilloscope View]](https://www.youtube.com/watch?v=4JS6pHeTcLg "Tim Follin adapted the Stage 2 BGM into a new Main Theme for the Amiga version.")<br>
 [(PCE/TG16)大魔界村/Ghouls'n Ghosts-Soundtrack](https://www.youtube.com/watch?v=1hz_s8rAKA4 "reprogrammed by Toshiaki Takimoto (Takimoto), Keita Hoshi (Hoshi)")
