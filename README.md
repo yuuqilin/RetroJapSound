@@ -1,4 +1,4 @@
-# RetroJapSound [alpha] [v0.1.1]
+# RetroJapSound [alpha] [v0.1.2]
 A Comprehensive Reference to Sound Chips in Japanese Computers and Consoles, Including FMP, PMD, and MDX Music File Formats.
 
 ## Sound Chip
@@ -671,20 +671,22 @@ CM300 + CM-32L[^59] + Emulated CM-32P</td>
  - hoot... - Sound Hardware Emulator: http://dmpsoft.s17.xrea.com/hoot/
  - HootFavoritter: https://kurohane.net/seisanbutu.html
  - Vermouth Synthesizer: http://retropc.net/yui/hoot/
- - FAQ ~ Hoot Archive: http://snesmusic.org/hoot/v2/faq.php
+ - FAQ ~ Hoot Archive: https://web.archive.org/web/20230227161038/http://snesmusic.org/hoot/v2/faq.php
  - czarek7711's collection: https://github.com/czarek7711/hoot
  - Hoot Archive 20240621: https://archive.org/details/hoot-archive-20240621
  - Knurek's collection https://hoot.joshw.info/
 ### Music Player
  - foobar2000: https://www.foobar2000.org/
    - HES input: https://foobar2000.xrea.jp/?Input#t3e2110a
-   - FMP/PMD Music Objects Decoder: https://foobar2000.xrea.jp/?Input#cc29139f
-   - S98 input: https://foobar2000.xrea.jp/?Input#re1ccf59
-   - MDX / MDC input: https://foobar2000.xrea.jp/?Input#y1422c1c
+   - FMP/PMD Music Objects Decoder: https://ux.getuploader.com/foobar2000/download/31
+   - S98 input: http://www.vesta.dti.ne.jp/~tsato/soft_fb2k.html
+   - MDX / MDC input: http://www.vesta.dti.ne.jp/~tsato/soft_fb2k.html
    - VGM input: https://foobar2000.xrea.jp/?Input#m8ab66e7
    - MIDI Player: https://github.com/stuerp/foo_midi
+   - OpenMPT Module Decoder: https://www.foobar2000.org/components/view/foo_openmpt54
  - MDPlayer: https://github.com/kuma4649/MDPlayer
  - FMPMD2000/WinFMP.dll/PMDWin.dll: http://c60.la.coocan.jp/download.html
+ - PDZF / Z8X: https://aosoft.jp/pdzfz8x/
  - FMP7: http://archive.fmp.jp/archives/448
    - FMDSP7: http://archive.fmp.jp/archives/30
    - exFMP4: http://archive.fmp.jp/archives/15
@@ -692,7 +694,8 @@ CM300 + CM-32L[^59] + Emulated CM-32P</td>
    - exMXDRV: http://archive.fmp.jp/archives/19
    - exS98P: http://archive.fmp.jp/archives/21
  - 98fmplayer: https://github.com/myon98/98fmplayer
- - MXDRV for Win32 [MXDRVg]: http://na01.shonan.ne.jp/~gorry/mx/
+ - MXDRV for Win32 [MXDRVg]: https://gorry.haun.org/mx/index_e.html
+ - X68Sound (ymfm engine): https://github.com/110-kenichi/X68Sound
 ### Music Archive
  - xxx\.joshw.info Music Archive: https://vgm.hcs64.com/
  - VGMRips: https://vgmrips.net/packs/
@@ -710,8 +713,8 @@ CM300 + CM-32L[^59] + Emulated CM-32P</td>
  - SMT's MDX Collection v1.04 - Hyper Burst CE++: https://archive.org/details/smts-mdx-collection-v-1.04-hyper-burst-ce-2023-08-27-ultra.-7z
  - Web ARChive: mdxoarchive\.webcrow.jp (2018-04-25): https://archive.org/details/mdxoarchive.webcrow.jp-20180425
  - Eidis and Neko68K present X68000 MDX Master Library: https://archive.org/details/X68000MDXML
- - NFG Games - Directory Listing of /X68000/Music/: https://nfggames.com/X68000/index.php/Music/
- - NFG Games - Directory Listing of /PC98/Music/: https://nfggames.com/PC98/index.php/Music/
+ - NFG Games X68000 Music File Archive: https://nfggames.com/X68000/index.php/Music/
+ - NFG Games PC98 Music File Archive: https://nfggames.com/PC98/index.php/Music/
  - PC-98 Music Disks: FMP Music DIsk 1-9, some PMD disks, a lot of FMP/PMD files, and more: https://archive.org/details/c-77-fmp-fmp-music-disk-vol.-9-mdfmdsdcp
  - NEC PC-8801 Music Disks (2024-06-16): https://archive.org/details/PC88MusicDisks_20240616
  - .s98 OPN Soundtrack Archive: https://archive.org/details/opn-s98
@@ -878,7 +881,7 @@ To correctly playback RCP format MIDI files with CM6 control data on Windows, as
 [コナミ・モーニング・ミュージック](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%96%E3%83%AB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0#%E3%82%B3%E3%83%8A%E3%83%9F%E3%83%BB%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%BB%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF)
 [^53]: [Tim Follin - "Ghouls 'n' Ghosts (C64)" Soundtrack [Oscilloscope View]](https://www.youtube.com/watch?v=wz36JWHTk-A&t=498s)<br>
 [Tim Follin - “Ghouls 'n' Ghosts (Amiga) - Main Theme” [Oscilloscope View]](https://www.youtube.com/watch?v=4JS6pHeTcLg "Tim Follin adapted the Stage 2 BGM into a new Main Theme for the Amiga version.")<br>
-[(PCE/TG16)大魔界村/Ghouls'n Ghosts-Soundtrack](https://www.youtube.com/watch?v=1hz_s8rAKA4 "reprogrammed by Toshiaki Takimoto (Takimoto), Keita Hoshi (Hoshi)")
+[[VGM HQ] Daimakaimura / Ghouls N' Ghosts (SuperGrafx) - Stage 02](https://www.youtube.com/watch?v=1hz_s8rAKA4 "reprogrammed by Toshiaki Takimoto (Takimoto), Keita Hoshi (Hoshi)")
 [^54]: [Super Real Mahjong PIV Theme - Sega Saturn](https://www.youtube.com/watch?v=lfcHArsBQ9o)
 [^55]: [対戦格闘アクションゲーム あすか120% BURNING Fest.](http://gyusyabu.ddo.jp/MP3/1994/AS.html)<br>
 [Asuka 120% BURNING Fest. (YM2151 / SC-55 / TG-100) | Sharp X68000 Full Soundtrack OST](https://www.youtube.com/watch?v=0Nw77aQ1crE&t=3566s "(TG-100 ver.)")
